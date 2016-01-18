@@ -11,9 +11,9 @@ void downheap(int j,int k){
 		if(i<k && d[i]<d[i+1]){
 			i++;
 		}
-	if(v>=d[i] || i>k){
-		break;
-	}
+		if(v>=d[i] || i>k){
+			break;
+		}
 	d[j]=d[i];
 	d[i]=v;
 	j=i;
